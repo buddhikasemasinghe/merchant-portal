@@ -1,7 +1,7 @@
 .home-page-wrapper{
     display: grid;
     grid-gap: 10px;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .home-page-wrapper > div {
@@ -18,9 +18,13 @@
     /*grid-template-columns: repeat(3, 1fr);*/
 }
 
-.home-page-footer{
-    grid-row: 4/5;
-    background-color: rgba(0, 176, 202, 0.5);
+.home-page-content {
+    min-height: 300px;
+}
+
+.home-page-wrapper > .home-page-footer {
+    grid-row: 5;
+    background-color: #00b0ca;
 }
 
 .home-page-header > div {
@@ -38,6 +42,8 @@
 .header-button-panel{
     justify-self: center;
     grid-column: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .company-logo{
@@ -57,4 +63,37 @@
 
 .signin-page-wrapper {
     display: grid;
+}
+
+.side-bar-image{
+    margin: 0 auto !important;
+}
+
+.ui.visible.left.sidebar~.fixed, .ui.visible.left.sidebar~.pusher{
+    -webkit-transform: translate3d(250px,0,0);
+    transform: translate3d(250px,0,0) !important;
+}
+
+.ui.sidebar{
+    width:250px !important;
+}
+
+.ui.inverted.blue.menu, .ui.inverted.menu .blue.active.item{
+    background-color: #00b0ca;
+}
+
+.side-bar-menu-item {
+    text-align: left !important;
+    font-size: large !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.main-content-body {
+    min-height: 600px;
+}
+
+.main-content-header {
+    background: #9d9c92 !important;
+    color: black;
 }

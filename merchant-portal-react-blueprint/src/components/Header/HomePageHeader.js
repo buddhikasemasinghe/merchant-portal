@@ -18,11 +18,14 @@ class HomePageHeader extends Component {
                     <div>Latest News</div>
                 </div>
                 <div className="header-button-panel">
-                    <Link to="full">
+                    <Link to="signup">
                     <Button primary>Merchant Signup</Button>
                     </Link>
                     <Link to="signin">
                     <Button primary>Merchant Login</Button>
+                    </Link>
+                    <Link to="loggedIn">
+                        <Button primary>Logged In(Mock)</Button>
                     </Link>
                 </div>
             </div>
